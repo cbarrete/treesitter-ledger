@@ -3,6 +3,10 @@ module.exports = grammar({
 
     extras: $ => [],
 
+    externals: $ => [
+        $._pure_note,
+    ],
+
     inline: $ => [
         $.indented_line,
         $.spacer,
@@ -215,7 +219,7 @@ module.exports = grammar({
 
         payee: $ => /[^(*!\n][^*!\n]*/,
 
-        note: $ => seq(';', /.*/),
+        note: $ => seq(';', $._pure_note),
 
         posting: $ => seq(
             $.whitespace,

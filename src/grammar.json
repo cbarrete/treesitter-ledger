@@ -1210,8 +1210,8 @@
           "value": ";"
         },
         {
-          "type": "PATTERN",
-          "value": ".*"
+          "type": "SYMBOL",
+          "name": "_pure_note"
         }
       ]
     },
@@ -1640,7 +1640,12 @@
   "extras": [],
   "conflicts": [],
   "precedences": [],
-  "externals": [],
+  "externals": [
+    {
+      "type": "SYMBOL",
+      "name": "_pure_note"
+    }
+  ],
   "inline": [
     "indented_line",
     "spacer",
