@@ -5,6 +5,7 @@ module.exports = grammar({
 
     externals: $ => [
         $._pure_note,
+        $.tag_name,
     ],
 
     inline: $ => [
@@ -219,7 +220,8 @@ module.exports = grammar({
 
         payee: $ => /[^(*!\n][^*!\n]*/,
 
-        note: $ => seq(';', $._pure_note),
+        // note: $ => seq(';', /.*/),
+        note: $ => seq(';', choice($.tag_name, $._pure_note)),
 
         posting: $ => seq(
             $.whitespace,

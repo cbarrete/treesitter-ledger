@@ -1210,8 +1210,17 @@
           "value": ";"
         },
         {
-          "type": "SYMBOL",
-          "name": "_pure_note"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "tag_name"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "_pure_note"
+            }
+          ]
         }
       ]
     },
@@ -1644,6 +1653,10 @@
     {
       "type": "SYMBOL",
       "name": "_pure_note"
+    },
+    {
+      "type": "SYMBOL",
+      "name": "tag_name"
     }
   ],
   "inline": [

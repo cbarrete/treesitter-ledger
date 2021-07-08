@@ -337,7 +337,17 @@
   {
     "type": "note",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "tag_name",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "note_subdirective",
@@ -701,6 +711,10 @@
   {
     "type": "tag",
     "named": false
+  },
+  {
+    "type": "tag_name",
+    "named": true
   },
   {
     "type": "time",

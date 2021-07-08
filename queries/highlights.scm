@@ -3,6 +3,8 @@
     (note)
 ] @comment
 
+((tag_name) @number)
+
 [
     (date)
     (interval)

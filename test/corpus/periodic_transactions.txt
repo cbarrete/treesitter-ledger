@@ -64,7 +64,4 @@ periodic transactions require interval
 
 (source_file
   (ERROR)
-  (ERROR
-    (date
-      (MISSING _single_date))
-    (payee)))
+  (ERROR))
